@@ -65,28 +65,26 @@
     height: 90vh;
     position: absolute;
     top: 80px;
-    /* left: -100%; */
+    left: -100%;
     opacity: 1;
     transition: all 0.5s ease;
+    z-index: -5;
   }
 
   .nav-menu.active {
     background: #000000;
-    margin: 0;
-    padding: 0;
     left: 0;
     opacity: 10;
     transition: all 0.5s ease;
-    z-index: 0;
-    display:grid;
+    display: table;
   }
 
-  .nav--links {
-    text-align: center;
+  .nav--links{
+    margin: 0;
+    padding: 0;
     padding: 2rem;
     width: 100%;
-    display: table;
-    color: white;
+    color: green;
   }
 
   .nav--links:hover {
