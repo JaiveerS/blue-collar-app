@@ -41,9 +41,9 @@ export default function Navbar() {
                         </Link>
                     </li>
                     <li className="nav--item">
-                        <Link to='/call' className="nav--links--mobile" onClick={closeMenu}>
+                        <a className="nav--links--mobile" href="tel:+16476393289">
                             Call
-                        </Link>
+                        </a>
                     </li>
                 </ul>
             </div>
