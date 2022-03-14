@@ -13,7 +13,7 @@ export default function Navbar() {
     return(
         <nav className="navbar">
             <div className="navbar--container">
-                <Link to="/" className="navbar--logo">
+                <Link to="/" className="navbar--logo" onClick={closeMenu}>
                     <img className="navbar--logo" src={Logo} alt="OntReno" ></img>
                 </Link>
                 <div className="menu--icon">
