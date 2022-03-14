@@ -23,7 +23,7 @@
 
 .nav-menu {
   display: grid;
-  grid-template-columns: repeat(4, auto);
+  grid-template-columns: repeat(5, auto);
   grid-gap: 10px;
   list-style: none;
   text-align: center;
@@ -33,15 +33,23 @@
 }
 
 .nav--item {
-  height: 80px;
+  height: 0px;
+}
+.nav--links{
+  text-decoration: none;
+  color: black;
 }
 
 .nav--links:hover {
   border-bottom: 4px solid #fff;
-  transition: all 0.2s ease-out;
+  transition: all 0.5s ease-out;
 }
 
 .nav--links--mobile {
+  display: none;
+}
+
+.menu--icon{
   display: none;
 }
 
@@ -57,15 +65,17 @@
     height: 90vh;
     position: absolute;
     top: 80px;
-    left: -100%;
+    /* left: -100%; */
     opacity: 1;
     transition: all 0.5s ease;
   }
 
   .nav-menu.active {
-    background: #242222;
+    background: #000000;
+    margin: 0;
+    padding: 0;
     left: 0;
-    opacity: 1;
+    opacity: 10;
     transition: all 0.5s ease;
     z-index: 1;
   }

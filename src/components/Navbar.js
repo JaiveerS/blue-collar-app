@@ -13,9 +13,9 @@ export default function Navbar() {
     return(
         <nav className="navbar">
             <div className="navbar--container">
-                <a href="/" className="navbar--logo">
+                <Link to="/" className="navbar--logo">
                     <img className="navbar--logo" src={Logo} alt="OntReno" ></img>
-                </a>
+                </Link>
                 <div className="menu--icon">
                     <Hamburger toggled={isOpen} toggle={setOpen} color="black"/>
                 </div>
