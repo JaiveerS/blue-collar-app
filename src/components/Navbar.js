@@ -47,7 +47,7 @@ export default function Navbar() {
         //         </ul>
         //     </div>
         // </nav>
-        <Nav>
+        <Nav isOpen={isOpen}>
             <Container>
                 <Link to="/" onClick={closeMenu}>
                     <Img src={Logo} alt="OntReno" ></Img>
@@ -84,7 +84,8 @@ const Nav = styled.div`
     left: 0;
     right: 0;
     z-index: 3;
-    background-color: #921010;
+    background-color: ${({ isOpen }) => (isOpen ? "#860F0F" : "#921010")};
+    
 `;
 const Container = styled.div`
     display: flex;
