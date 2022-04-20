@@ -91,7 +91,7 @@ const Container = styled.div`
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1.5rem 0;
+    padding: 0.5rem 0;
     max-width: 1000px;
     margin: auto;
     flex-wrap: wrap;
