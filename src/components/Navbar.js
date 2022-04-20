@@ -53,11 +53,10 @@ export default function Navbar() {
                     <Img src={Logo} alt="OntReno" ></Img>
                 </Link>
                 {/*Hamburger & button for mobile only */}
-                <Button href="tel:+16476393289">Call</Button>
                 <HamburgerMenu>
                     <Hamburger toggled={isOpen} toggle={setOpen} color="white"/>
                 </HamburgerMenu>
-                <Menu>
+                <Menu isOpen={isOpen}>
                     <LinkWrapper>
                         <MenuLink>
                             <Link to="/" onClick={closeMenu}>Home</Link>
@@ -71,6 +70,7 @@ export default function Navbar() {
                         <MenuLink>
                             <Link to="/contact-us" onClick={closeMenu}>Contact Us</Link>
                         </MenuLink>
+                        <Button href="tel:+16476393289">Call</Button>
                     </LinkWrapper>
                 </Menu>
             </Container>
@@ -93,15 +93,29 @@ const Container = styled.div`
     padding: 1.5rem 0;
     max-width: 1000px;
     margin: auto;
+    flex-wrap: wrap;
 `;
 
 const Img = styled.img`
     height: 4rem;
+    padding-left: 50px;
 `;
 const Menu = styled.div`
-    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    @media (max-width: 670px) {
+        border-radius: 1rem;
+        margin-top: 1rem;
+        overflow: hidden;
+        flex-direction: column;
+        max-height: ${({ isOpen }) => (isOpen ? "100%" : "0")};
+
+    transition: width 2s, height 2s, transform 2s;
+    width: 100%;
 `;
-const LinkWrapper = styled.a`
+const LinkWrapper = styled.div`
     a {
         text-decoration: none;
         color: white;
@@ -114,42 +128,45 @@ const LinkWrapper = styled.a`
         &:hover {
         color: white;
         background: #800707;
-        }
     }
+    
+    @media (max-width: 768px) {
+        flex-direction: column;
+        text-align: center;
+      }
 `;
 const MenuLink = styled.a`
     color:white;
+
+    @media (max-width: 670px) {
+        display: flex;
+        flex-direction:column;
+        overflow:hidden;
+    }
 `;
 const Button = styled.a`
     display:none;
     text-decoration: none;
-    font-size: 0.8rem;
-    background: white;
     border: none;
-    padding: 0.8rem 1.1rem;
-    color: black;
-    border-radius: 1rem;
-    box-shadow: 0px 13px 24px -7px #ecb6d7;
-    transition: all 0.3s ease-in-out;
-    margin-left: 0.5rem;
     cursor: pointer;
-
-    &:hover {
-    box-shadow: 0px 17px 16px -11px #ecb6d7;
-    transform: translateY(-5px);
-    }
+    text-align: center;
+    
 
     @media (max-width: 670px) {
-    padding: 0.3;
-    display: flex;
+        padding: 0.3;
+        display: flex;
+        flex-direction: column;
+        background: green;
     }
 `;
 
 const HamburgerMenu = styled.div`
     display: none;
+    flex-direction: column;
+    padding-right: 50px;
     }
     @media (max-width: 670px) {
-    display: flex;
+        display: flex;
     }
 `;
 
