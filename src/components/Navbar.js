@@ -1,6 +1,5 @@
 import React from "react";
 import Logo from "../images/ontreno-logo.svg";
-import './Navbar.css';
 import {Link} from 'react-router-dom'
 import { Twirl as Hamburger } from 'hamburger-react'
 
