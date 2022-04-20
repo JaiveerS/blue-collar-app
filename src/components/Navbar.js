@@ -99,7 +99,7 @@ const Container = styled.div`
 
 const Img = styled.img`
     height: 4rem;
-    padding-left: 50px;
+    padding-left: 25px;
 `;
 const Menu = styled.div`
     display: flex;
@@ -164,7 +164,7 @@ const Button = styled.a`
 const HamburgerMenu = styled.div`
     display: none;
     flex-direction: column;
-    padding-right: 50px;
+    padding-right: 25px;
     }
     @media (max-width: 670px) {
         display: flex;
