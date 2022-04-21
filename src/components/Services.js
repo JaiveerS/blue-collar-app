@@ -1,10 +1,10 @@
 import React from "react";
 import styled from 'styled-components';
 
-export default function Home() {
+export default function Services() {
     return (
       <Content>
-        <h1>THIS IS THE HOME PAGE!!!</h1>
+        <h1>THIS IS THE Services PAGE!!!</h1>
       </Content>
       )
 }

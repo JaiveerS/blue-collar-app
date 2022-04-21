@@ -68,7 +68,7 @@ export default function Navbar() {
                             <Link to="/projects" onClick={closeMenu}>Projects</Link>
                         </MenuLink>
                         <MenuLink>
-                            <Link to="/contact-us" onClick={closeMenu}>Contact Us</Link>
+                            <Link to="/contact" onClick={closeMenu}>Contact Us</Link>
                         </MenuLink>
                         <Button href="tel:+16476393289">Call</Button>
                     </LinkWrapper>
@@ -112,7 +112,6 @@ const Menu = styled.div`
         overflow: hidden;
         flex-direction: column;
         max-height: ${({ isOpen }) => (isOpen ? "100%" : "0")};
-
     transition: width 2s, height 2s, transform 2s;
     width: 100%;
 `;
@@ -138,7 +137,6 @@ const LinkWrapper = styled.div`
 `;
 const MenuLink = styled.a`
     color:white;
-
     @media (max-width: 670px) {
         display: flex;
         flex-direction:column;
@@ -152,7 +150,6 @@ const Button = styled.a`
     cursor: pointer;
     text-align: center;
     
-
     @media (max-width: 670px) {
         padding: 0.3;
         display: flex;
@@ -170,5 +167,3 @@ const HamburgerMenu = styled.div`
         display: flex;
     }
 `;
-
-
