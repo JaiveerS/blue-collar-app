@@ -58,18 +58,10 @@ export default function Navbar() {
                 </HamburgerMenu>
                 <Menu isOpen={isOpen}>
                     <LinkWrapper>
-                        <MenuLink>
-                            <Link to="/" onClick={closeMenu}>Home</Link>
-                        </MenuLink>
-                        <MenuLink>
-                            <Link to="/services" onClick={closeMenu}>Services</Link>
-                        </MenuLink>
-                        <MenuLink>
-                            <Link to="/projects" onClick={closeMenu}>Projects</Link>
-                        </MenuLink>
-                        <MenuLink>
-                            <Link to="/contact" onClick={closeMenu}>Contact Us</Link>
-                        </MenuLink>
+                            <MenuLink to="/" onClick={closeMenu}>Home</MenuLink>
+                            <MenuLink to="/services" onClick={closeMenu}>Services</MenuLink>
+                            <MenuLink to="/projects" onClick={closeMenu}>Projects</MenuLink>
+                            <MenuLink to="/contact" onClick={closeMenu}>Contact Us</MenuLink>
                         <Button href="tel:+16476393289">Call</Button>
                     </LinkWrapper>
                 </Menu>
@@ -135,7 +127,7 @@ const LinkWrapper = styled.div`
         text-align: center;
       }
 `;
-const MenuLink = styled.a`
+const MenuLink = styled(Link)`
     color:white;
     @media (max-width: 670px) {
         display: flex;

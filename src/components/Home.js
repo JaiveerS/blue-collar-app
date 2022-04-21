@@ -4,7 +4,7 @@ import styled from 'styled-components';
 export default function Home() {
     return (
       <Content>
-        <h1>THIS IS THE HOME PAGE!!!</h1>
+        <h1>Specialize In Legal Basements!</h1>
       </Content>
       )
 }
