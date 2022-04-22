@@ -77,6 +77,12 @@ const Nav = styled.div`
     right: 0;
     z-index: 3;
     background-color: ${({ isOpen }) => (isOpen ? "#860F0F" : "#921010")};
+
+    @media (max-width: 670px) {
+        height:${({ isOpen }) => (isOpen ? "100%" : "")};
+        z-index:${({ isOpen }) => (isOpen ? "1" : "3")};
+        transition: 0.5s;
+    }
     
 `;
 const Container = styled.div`
@@ -98,6 +104,7 @@ const Menu = styled.div`
     justify-content: space-between;
     align-items: center;
     position: relative;
+
     @media (max-width: 670px) {
         border-radius: 1rem;
         margin-top: 1rem;
@@ -111,7 +118,7 @@ const LinkWrapper = styled.div`
     a {
         text-decoration: none;
         color: white;
-        font-size: 0.9rem;
+        font-size: 1rem;
         padding: 0.7rem 1rem;
         transition: all 0.1s ease-in;
         border-radius: 0.5rem;
@@ -120,19 +127,27 @@ const LinkWrapper = styled.div`
         &:hover {
         color: white;
         background: #800707;
+
     }
     
-    @media (max-width: 768px) {
-        flex-direction: column;
+    @media (max-width: 670px) {
+        position: relative;
+        top: 25%;
+        width: 100%;
         text-align: center;
+        margin-top:30px;
       }
 `;
 const MenuLink = styled(Link)`
     color:white;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
     @media (max-width: 670px) {
         display: flex;
         flex-direction:column;
         overflow:hidden;
+        
     }
 `;
 const Button = styled.a`
