@@ -9,7 +9,7 @@ export default function Import() {
   const images = importAll(require.context('../images/gallery', false, /\.(png|jpe?g|svg)$/));
 
   const pics = images.map(image =>
-    <Picture key={image} src={image}/>
+    <Picture key={image} src={image} alt="renovation"/>
   )
 
     return (
