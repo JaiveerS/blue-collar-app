@@ -48,7 +48,7 @@ export default function Navbar() {
         //     </div>
         // </nav>
         <Nav isOpen={isOpen}>
-            <Container>
+            <Container isOpen={isOpen}>
                 <Link to="/" onClick={closeMenu}>
                     <Img src={Logo} alt="OntReno" ></Img>
                 </Link>
@@ -93,6 +93,13 @@ const Container = styled.div`
     max-width: 1000px;
     margin: auto;
     flex-wrap: wrap;
+
+    // @media (max-width: 670px) {
+    //     background-color: ${({ isOpen }) => (isOpen ? "#860F0F" : "#921010")};
+    //     height:${({ isOpen }) => (isOpen ? "100%" : "")};
+    //     z-index:${({ isOpen }) => (isOpen ? "1" : "3")};
+    //     transition: 0.5s;
+    // }
 `;
 
 const Img = styled.img`
