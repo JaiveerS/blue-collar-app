@@ -1,18 +1,21 @@
 import React from "react";
 import styled from 'styled-components';
+import Images from "./Import";
+import InfiniteScroll from 'react-infinite-scroll-component';
+
 
 export default function Projects() {
     return (
       <Content>
-        <h1>THIS IS THE Projects PAGE!!!</h1>
+        <Images/>
       </Content>
       )
 }
 
 const Content = styled.div`
   display:flex;
-  width:80%;
+  width:100%;
   max-width:1000px;
   margin: auto;
-  padding-top: 80px;
+  padding-top: 100px;
 `;
