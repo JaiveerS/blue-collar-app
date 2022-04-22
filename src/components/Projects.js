@@ -1,7 +1,6 @@
 import React from "react";
 import styled from 'styled-components';
 import Images from "./Import";
-import InfiniteScroll from 'react-infinite-scroll-component';
 
 
 export default function Projects() {
