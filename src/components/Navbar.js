@@ -98,9 +98,14 @@ const Container = styled.div`
 const Img = styled.img`
     height: 4rem;
     padding-left: 25px;
+    padding-right:25px;
+
+    @media (max-width: 670px) {
+        padding-top:5px;
+    }
 `;
 const Menu = styled.div`
-    display: flex;
+    // display: flex;
     justify-content: space-between;
     align-items: center;
     position: relative;
@@ -109,8 +114,8 @@ const Menu = styled.div`
         border-radius: 1rem;
         margin-top: 1rem;
         overflow: hidden;
-        flex-direction: column;
         max-height: ${({ isOpen }) => (isOpen ? "100%" : "0")};
+        
     transition: width 2s, height 2s, transform 2s;
     width: 100%;
 `;
