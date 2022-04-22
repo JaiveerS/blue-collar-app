@@ -48,7 +48,7 @@ export default function Navbar() {
         //     </div>
         // </nav>
         <Nav isOpen={isOpen}>
-            <Container isOpen={isOpen}>
+            <Container>
                 <Link to="/" onClick={closeMenu}>
                     <Img src={Logo} alt="OntReno" ></Img>
                 </Link>
@@ -77,12 +77,6 @@ const Nav = styled.div`
     right: 0;
     z-index: 3;
     background-color: ${({ isOpen }) => (isOpen ? "#860F0F" : "#921010")};
-
-    @media (max-width: 670px) {
-        height:${({ isOpen }) => (isOpen ? "100%" : "")};
-        z-index:${({ isOpen }) => (isOpen ? "1" : "3")};
-        transition: 0.5s;
-    }
     
 `;
 const Container = styled.div`
@@ -93,36 +87,23 @@ const Container = styled.div`
     max-width: 1000px;
     margin: auto;
     flex-wrap: wrap;
-
-    // @media (max-width: 670px) {
-    //     background-color: ${({ isOpen }) => (isOpen ? "#860F0F" : "#921010")};
-    //     height:${({ isOpen }) => (isOpen ? "100%" : "")};
-    //     z-index:${({ isOpen }) => (isOpen ? "1" : "3")};
-    //     transition: 0.5s;
-    // }
 `;
 
 const Img = styled.img`
     height: 4rem;
     padding-left: 25px;
-    padding-right:25px;
-
-    @media (max-width: 670px) {
-        padding-top:5px;
-    }
 `;
 const Menu = styled.div`
-    // display: flex;
+    display: flex;
     justify-content: space-between;
     align-items: center;
     position: relative;
-
     @media (max-width: 670px) {
         border-radius: 1rem;
         margin-top: 1rem;
         overflow: hidden;
+        flex-direction: column;
         max-height: ${({ isOpen }) => (isOpen ? "100%" : "0")};
-        
     transition: width 2s, height 2s, transform 2s;
     width: 100%;
 `;
@@ -130,7 +111,7 @@ const LinkWrapper = styled.div`
     a {
         text-decoration: none;
         color: white;
-        font-size: 1rem;
+        font-size: 0.9rem;
         padding: 0.7rem 1rem;
         transition: all 0.1s ease-in;
         border-radius: 0.5rem;
@@ -139,15 +120,12 @@ const LinkWrapper = styled.div`
         &:hover {
         color: white;
         background: #800707;
-
     }
     
-    @media (max-width: 670px) {
-        position: relative;
-        top: 25%;
-        width: 100%;
+    @media (max-width: 768px) {
+        flex-direction: column;
         text-align: center;
-        margin-top:30px;
+        
       }
 `;
 const MenuLink = styled(Link)`
@@ -159,7 +137,6 @@ const MenuLink = styled(Link)`
         display: flex;
         flex-direction:column;
         overflow:hidden;
-        
     }
 `;
 const Button = styled.a`
