@@ -3,11 +3,15 @@
   padding: 0;
 }
 
-/* body{
-  font-family: 'Montserrat', sans-serif;
+body{
+  font-family: Inter;
+  font-style: normal;
+  font-weight: normal;
 }
 
 button{
-  font-family: 'Montserrat', sans-serif;
-} */
+  font-family: Inter;
+  font-style: normal;
+  font-weight: normal;
+}
 

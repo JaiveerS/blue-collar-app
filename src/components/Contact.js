@@ -76,8 +76,9 @@ const Content = styled.div`
   margin: auto;
   display: flex;
   min-height: 100vh;
-  padding-top: 80px;
+  padding-top: 100px;
   justify-content: center;
+
 `;
 
 const Title = styled.h1`
@@ -86,10 +87,14 @@ const Title = styled.h1`
 
 const ContactForm = styled.form`
   display:block;
-
+  width:50%
+  @media (max-width: 670px) {
+    width: 100%
+  }
 `;
 
 const FormGroup = styled.div`
+display:flex;
   input{
     position: relative;
     margin-bottom: 1rem;
@@ -97,7 +102,7 @@ const FormGroup = styled.div`
     width: 100%;
     border: 2px solid #eee;
     padding: 1ch;
-    border-radius: 3px;
+    border-radius: px;
     transition: 150ms ease;
     outline: none;
     font-size: 1rem;
@@ -105,12 +110,7 @@ const FormGroup = styled.div`
   }
 
   label{
-    position: absolute;
-    top: 1ch;
-    left: 1ch;
-    pointer-events: none;
-    transition: 150ms ease;
-    color: #888;
+    display:none;
   }
 `;
 
