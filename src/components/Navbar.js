@@ -87,11 +87,13 @@ const Container = styled.div`
     max-width: 1000px;
     margin: auto;
     flex-wrap: wrap;
+    
 `;
 
 const Img = styled.img`
     height: 4rem;
     padding-left: 25px;
+    
 `;
 const Menu = styled.div`
     display: flex;
@@ -120,12 +122,12 @@ const LinkWrapper = styled.div`
         &:hover {
         color: white;
         background: #800707;
+
     }
     
     @media (max-width: 768px) {
         flex-direction: column;
         text-align: center;
-        
       }
 `;
 const MenuLink = styled(Link)`
@@ -137,7 +139,6 @@ const MenuLink = styled(Link)`
         display: flex;
         flex-direction:column;
         overflow:hidden;
-        padding-bottom: 10px;
     }
 `;
 const Button = styled.a`

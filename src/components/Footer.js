@@ -69,7 +69,7 @@ export default function App() {
       </div>
 
       <div className='text-center p-3' style={{ backgroundColor: '#921010' }}>
-        © 2020 Copyright: 
+        © {new Date().getFullYear()} Copyright:
         <a className='text-white' href='/'>
            Ontario Renovations
         </a>
