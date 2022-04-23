@@ -135,4 +135,7 @@ const Button = styled.button`
   font-size: 1rem;
   color: #fff;
   font-family: inherit
+  &:hover {
+    background: #800707;
+}
 `;
