@@ -25,7 +25,6 @@ export default function Contact() {
       <Content>
         <ContactForm ref={form} onSubmit={sendEmail}>
         <Title>Contact Us</Title>
-          {/* <!-- name --> */}
           <FormGroup>
             <label>Name</label>
             <input
@@ -36,8 +35,6 @@ export default function Contact() {
               required
             />
           </FormGroup>
-
-          {/* <!-- email --> */}
           <FormGroup>
             <label>Email address</label>
             <input
@@ -48,7 +45,6 @@ export default function Contact() {
               required
             />
           </FormGroup>
-
           <FormGroup>
             <label >Message</label>
             <FormText
@@ -60,7 +56,6 @@ export default function Contact() {
               required
             />
           </FormGroup>
-
           <Button type="submit">
             Submit
           </Button>
@@ -87,6 +82,7 @@ const Title = styled.h1`
 
 const ContactForm = styled.form`
   display:block;
+  margin-bottom: none;
   width:50%
   @media (max-width: 670px) {
     width: 100%

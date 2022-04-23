@@ -3,15 +3,6 @@
   padding: 0;
 }
 
-body{
-  font-family: Inter;
-  font-style: normal;
-  font-weight: normal;
+body {
+  font-family: Roboto, Helvetica, Arial, sans-serif;
 }
-
-button{
-  font-family: Inter;
-  font-style: normal;
-  font-weight: normal;
-}
-
