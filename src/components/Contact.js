@@ -70,9 +70,12 @@ const Content = styled.div`
   max-width:1000px;
   margin: auto;
   display: flex;
-  min-height: 100vh;
+  min-height: 90vh;
   padding-top: 100px;
   justify-content: center;
+  @media (max-width: 670px) {
+    padding-top:120px;
+  }
 
 `;
 
@@ -83,7 +86,7 @@ const Title = styled.h1`
 const ContactForm = styled.form`
   display:block;
   margin-bottom: none;
-  width:50%
+  width:60%
   @media (max-width: 670px) {
     width: 100%
   }

@@ -14,5 +14,8 @@ const Content = styled.div`
   width:80%;
   max-width:1000px;
   margin: auto;
-  padding-top: 80px;
+  padding-top:110px;
+  @media (max-width: 670px) {
+    padding-top:120px;
+  }
 `;
