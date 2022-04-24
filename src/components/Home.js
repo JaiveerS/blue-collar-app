@@ -15,8 +15,8 @@ const Content = styled.div`
   max-width:1000px;
   margin: auto;
   padding-top:110px;
+  min-height: 90vh;
   @media (max-width: 670px) {
     padding-top:120px;
   }
-
 `;
