@@ -81,12 +81,16 @@ const Content = styled.div`
 
 const Title = styled.h1`
   text-align:center;
+  color:white;
 `;
 
 const ContactForm = styled.form`
   display:block;
   margin-bottom: none;
   width:60%
+  background:black;
+  border-radius: 10px
+  padding:30px
   @media (max-width: 670px) {
     width: 100%
   }
@@ -131,7 +135,7 @@ const FormText = styled.textarea`
 const Button = styled.button`
   display: block;
   width: 100%;
-  background-color: #e14;
+  background-color: #921010;
   border: none;
   border-radius: 3px;
   padding: 1ch;

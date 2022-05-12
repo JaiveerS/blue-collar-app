@@ -13,14 +13,14 @@ export default function App() {
     <MDBFooter className='bg-light text-center text-white'>
       <div className='container p-4 pb-0'>
         <section className='mb-4'>
-          <a
+          {/* <a
             className='btn btn-primary btn-floating m-1'
             style={{ backgroundColor: '#3b5998' }}
             href='#!'
             role='button'
           >
             <MDBIcon fab icon='facebook-f' />
-          </a>
+          </a> */}
 
           {/* <a
             className='btn btn-primary btn-floating m-1'
@@ -31,14 +31,14 @@ export default function App() {
             <MDBIcon fab icon='twitter' />
           </a> */}
 
-          <a
+          {/* <a
             className='btn btn-primary btn-floating m-1'
             style={{ backgroundColor: '#dd4b39' }}
             href='#!'
             role='button'
           >
             <MDBIcon fab icon='google' />
-          </a>
+          </a> */}
           <a
             className='btn btn-primary btn-floating m-1'
             style={{ backgroundColor: '#ac2bac' }}
