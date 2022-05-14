@@ -74,9 +74,10 @@ export default function Contact() {
         </InfoDiv>
       </Content>
       {/* add map here */}
-      <Iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d46077.95482003993!2d-79.74333246703041!3d43.79626535371957!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b236b4d890ddf%3A0x2805e99a61ae1ac7!2sOntario%20Renovations!5e0!3m2!1sen!2sca!4v1652567083777!5m2!1sen!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"/>
-
-      </Container>
+        <Map>
+          <Iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d46077.95482003993!2d-79.74333246703041!3d43.79626535371957!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b236b4d890ddf%3A0x2805e99a61ae1ac7!2sOntario%20Renovations!5e0!3m2!1sen!2sca!4v1652567083777!5m2!1sen!2sca" width='80%' height="450" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"/>
+        </Map>
+      </Container>  
       )
 }
 
@@ -89,7 +90,6 @@ const Content = styled.div`
   width:80%;
   max-width:1000px;
   margin: auto;
-  display: flex;
   padding-top: 100px;
   justify-content: center;
   column-gap: 0.1rem;
@@ -98,6 +98,18 @@ const Content = styled.div`
     flex-wrap: wrap;
   }
 
+`;
+
+const Map = styled.div`
+display:flex;
+display: flex;
+padding-top: 25px;
+justify-content: center;
+
+@media (max-width: 670px) {
+  padding-top:120px;
+  flex-wrap: wrap;
+}
 `;
 
 const Title = styled.h1`

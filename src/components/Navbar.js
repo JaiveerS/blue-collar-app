@@ -62,7 +62,7 @@ export default function Navbar() {
                             <MenuLink to="/services" onClick={closeMenu}>Services</MenuLink>
                             <MenuLink to="/projects" onClick={closeMenu}>Projects</MenuLink>
                             <MenuLink to="/contact" onClick={closeMenu}>Contact Us</MenuLink>
-                        <Button href="tel:+16476393289">Call</Button>
+                        <Button href="tel:+16475448925">Call</Button>
                     </LinkWrapper>
                 </Menu>
             </Container>
