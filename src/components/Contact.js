@@ -2,6 +2,11 @@ import React from "react";
 import styled from 'styled-components';
 import emailjs from 'emailjs-com';
 import { useRef } from 'react';
+import image from '../images/gallery/1.jpg'
+import imageRight from '../images/gallery/14.jpg'
+import Map from '../components/Map'
+
+
 
 export default function Contact() {
   const test = 1;
@@ -22,6 +27,7 @@ export default function Contact() {
   };
 
     return (
+      <Container>
       <Content>
         <ContactForm ref={form} onSubmit={sendEmail}>
         <Title>Contact Us</Title>
@@ -60,9 +66,22 @@ export default function Contact() {
             Submit
           </Button>
         </ContactForm>
+        <InfoDiv>
+            <Head>Contact</Head>
+            <Body>647-544-8925</Body>
+            <Head>Address</Head>
+            <Body>36 Carl Finlay Drive <br/>Brampton, Ontario L6R 1Y5 <br /> Canada</Body>
+        </InfoDiv>
       </Content>
+      {/* add map here */}
+      <Map/>
+      </Container>
       )
 }
+
+const Container =styled.div`
+min-height: 85vh;
+`;
 
 const Content = styled.div`
   display:flex;
@@ -70,11 +89,12 @@ const Content = styled.div`
   max-width:1000px;
   margin: auto;
   display: flex;
-  min-height: 90vh;
   padding-top: 100px;
   justify-content: center;
+  column-gap: 0.1rem;
   @media (max-width: 670px) {
     padding-top:120px;
+    flex-wrap: wrap;
   }
 
 `;
@@ -88,9 +108,12 @@ const ContactForm = styled.form`
   display:block;
   margin-bottom: none;
   width:60%
-  background:black;
+  background: linear-gradient(0deg, rgba(0 0 0 / 70%), rgba(0 0 0 / 70%)), url(${image});
+  background-repeat:no-repeat;
+  background-size: cover;
   border-radius: 10px
   padding:30px
+  background-position: left center;
   @media (max-width: 670px) {
     width: 100%
   }
@@ -145,4 +168,26 @@ const Button = styled.button`
   &:hover {
     background: #800707;
 }
+`;
+
+const InfoDiv = styled.div`
+  background: linear-gradient(0deg, rgba(0 0 0 / 70%), rgba(0 0 0 / 70%)), url(${imageRight});
+  background-repeat:no-repeat;
+  background-size: cover;
+  border-radius: 10px;
+  padding:30px
+  width:30%
+  background-position: center center;
+  @media (max-width: 670px) {
+    width: 100%
+    margin-top: 5px;
+  }
+`;
+
+const Head = styled.h2`
+  color: white;
+`;
+
+const Body = styled.p`
+  color: white;
 `;
