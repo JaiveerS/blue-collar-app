@@ -4,7 +4,7 @@ import emailjs from 'emailjs-com';
 import { useRef } from 'react';
 import image from '../images/gallery/1.jpg'
 import imageRight from '../images/gallery/14.jpg'
-import Map from '../components/Map'
+import Iframe from 'react-iframe'
 
 
 
@@ -74,7 +74,8 @@ export default function Contact() {
         </InfoDiv>
       </Content>
       {/* add map here */}
-      <Map/>
+      <Iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d46077.95482003993!2d-79.74333246703041!3d43.79626535371957!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b236b4d890ddf%3A0x2805e99a61ae1ac7!2sOntario%20Renovations!5e0!3m2!1sen!2sca!4v1652567083777!5m2!1sen!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"/>
+
       </Container>
       )
 }
