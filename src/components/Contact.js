@@ -73,10 +73,10 @@ export default function Contact() {
             <Body>36 Carl Finlay Drive <br/>Brampton, Ontario L6R 1Y5 <br /> Canada</Body>
         </InfoDiv>
       </Content>
-      {/* add map here */}
         <Map>
           <Iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d46077.95482003993!2d-79.74333246703041!3d43.79626535371957!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b236b4d890ddf%3A0x2805e99a61ae1ac7!2sOntario%20Renovations!5e0!3m2!1sen!2sca!4v1652567083777!5m2!1sen!2sca" width='80%' height="450" allowfullscreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"/>
         </Map>
+      {/* add map here */}
       </Container>  
       )
 }
@@ -101,13 +101,15 @@ const Content = styled.div`
 `;
 
 const Map = styled.div`
-display:flex;
 display: flex;
-padding-top: 25px;
+padding-top: 10px;
 justify-content: center;
-
+width:80%;
+max-width:1000px;
+margin: auto;
 @media (max-width: 670px) {
   flex-wrap: wrap;
+  max-width:100%;
 }
 `;
 
@@ -187,8 +189,8 @@ const InfoDiv = styled.div`
   background-repeat:no-repeat;
   background-size: cover;
   border-radius: 10px;
-  padding:30px
-  width:30%
+  padding:50px
+  width:35%
   background-position: center center;
   @media (max-width: 670px) {
     width: 100%
