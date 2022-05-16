@@ -62,7 +62,7 @@ export default function Navbar() {
                             <MenuLink to="/services" onClick={closeMenu}>Services</MenuLink>
                             <MenuLink to="/projects" onClick={closeMenu}>Projects</MenuLink>
                             <MenuLink to="/contact" onClick={closeMenu}>Contact Us</MenuLink>
-                        <Button href="tel:+16475448925">Call</Button>
+                        <Button href="tel:+16475448925">Call Us</Button>
                     </LinkWrapper>
                 </Menu>
             </Container>
@@ -101,11 +101,12 @@ const Menu = styled.div`
     align-items: center;
     position: relative;
     @media (max-width: 670px) {
+        margin-top:-20px;
         border-radius: 1rem;
-        margin-top: 1rem;
         overflow: hidden;
         flex-direction: column;
         max-height: ${({ isOpen }) => (isOpen ? "100%" : "0")};
+        padding: ${({ isOpen }) => (isOpen ? "50px" : "0")};
     transition: width 2s, height 2s, transform 2s;
     width: 100%;
 `;
@@ -128,6 +129,7 @@ const LinkWrapper = styled.div`
     @media (max-width: 768px) {
         flex-direction: column;
         text-align: center;
+        padding: 20px;
       }
 `;
 const MenuLink = styled(Link)`
@@ -149,10 +151,13 @@ const Button = styled.a`
     text-align: center;
     
     @media (max-width: 670px) {
-        padding: 0.3;
+        padding: 0.5;
         display: flex;
         flex-direction: column;
         background: green;
+        width: 200%;
+        margin-left: -60px;
+        margin-top: 40px;
     }
 `;
 
