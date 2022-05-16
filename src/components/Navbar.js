@@ -59,13 +59,13 @@ export default function Navbar() {
                 <Menu isOpen={isOpen}>
                     <LinkWrapper>
                             <MenuLink to="/" onClick={closeMenu}>Home</MenuLink>
-                            {/* <Divider/> */}
+                            <Divider/>
                             <MenuLink to="/services" onClick={closeMenu}>Services</MenuLink>
-                            {/* <Divider/> */}
+                            <Divider/>
                             <MenuLink to="/projects" onClick={closeMenu}>Projects</MenuLink>
-                            {/* <Divider/> */}
+                            <Divider/>
                             <MenuLink to="/contact" onClick={closeMenu}>Contact Us</MenuLink>
-                            {/* <Divider/> */}
+                            <Divider/>
                         <Button href="tel:+16475448925">Call Us</Button>
                     </LinkWrapper>
                 </Menu>
