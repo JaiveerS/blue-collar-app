@@ -59,9 +59,13 @@ export default function Navbar() {
                 <Menu isOpen={isOpen}>
                     <LinkWrapper>
                             <MenuLink to="/" onClick={closeMenu}>Home</MenuLink>
+                            <Divider/>
                             <MenuLink to="/services" onClick={closeMenu}>Services</MenuLink>
+                            <Divider/>
                             <MenuLink to="/projects" onClick={closeMenu}>Projects</MenuLink>
+                            <Divider/>
                             <MenuLink to="/contact" onClick={closeMenu}>Contact Us</MenuLink>
+                            <Divider/>
                         <Button href="tel:+16475448925">Call Us</Button>
                     </LinkWrapper>
                 </Menu>
@@ -101,12 +105,12 @@ const Menu = styled.div`
     align-items: center;
     position: relative;
     @media (max-width: 670px) {
-        margin-top:-20px;
+        padding-top: 30px;
         border-radius: 1rem;
         overflow: hidden;
         flex-direction: column;
         max-height: ${({ isOpen }) => (isOpen ? "100%" : "0")};
-        padding: ${({ isOpen }) => (isOpen ? "50px" : "0")};
+        padding: ${({ isOpen }) => (isOpen ? "10px" : "0")};
     transition: width 2s, height 2s, transform 2s;
     width: 100%;
 `;
@@ -168,5 +172,14 @@ const HamburgerMenu = styled.div`
     }
     @media (max-width: 670px) {
         display: flex;
+    }
+`;
+
+const Divider = styled.hr`
+    display:none;
+    @media (max-width: 670px) {
+        display: block;
+        border-top: 4px solid #000000;
+        border-radius: 5px;
     }
 `;
