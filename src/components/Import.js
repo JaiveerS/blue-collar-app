@@ -21,8 +21,8 @@ export default function Import() {
 
 const Container = styled.div`
     display: grid;
-    grid-gap: 15px;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-gap: 2.5px;
+    grid-template-columns: repeat(auto-fit, minmax(425px, 1fr));
 
 
 `;

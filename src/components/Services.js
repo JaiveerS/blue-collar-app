@@ -11,42 +11,76 @@ import belowgrade4 from '../images/gallery/28.jpg'
 export default function Services() {
     return (
       <Content>
-        <h2>Specialize In Legal Basements</h2>
-        <h3>We Do It All </h3>
-        <h4>From:</h4>
-        <h4>obtaining building permits & preparing architectural drawings</h4>
-        <img src={drawing1} loading="lazy "alt="architectural drawings" width="50%"/>
-        <img src={drawing2} loading="lazy "alt="architectural drawings" width="50%"/>
-        <h4>booking inspections</h4>
-        <h3>Digging Legal below grade entrances</h3>
-        <img src={belowgrade1} loading="lazy "alt="below grade entrance" width="50%"/>
-        <img src={belowgrade2} loading="lazy "alt="below grade entrance" width="50%"/>
-        <img src={belowgrade3} loading="lazy "alt="below grade entrance" width="50%"/>
-        <img src={belowgrade4} loading="lazy "alt="below grade entrance" width="50%"/>
-        <h4>framing</h4>
-        <h4>plumbing</h4>
-        <h4>all living area neccesities like</h4>
-        <h3>Kitchens</h3>
-        <h3>Bathrooms</h3>
-        <h3>Living Room</h3>
+        <Title>Our Services</Title>
+        <Title>We Specialize In Legal Basements</Title>
+        <Header>We Do It All </Header>
+        <Header>obtain building permits & prepare architectural drawings</Header>
+        <ImageContainer>
+          <img src={drawing1} loading="lazy "alt="architectural drawings" width="50%"/>
+          <img src={drawing2} loading="lazy "alt="architectural drawings" width="50%"/>
+        </ImageContainer>
+        <Header>Book Inspections</Header>
+        <Header>Digg Legal below grade entrances</Header>
+        <ImageContainer>
+          <img src={belowgrade1} loading="lazy "alt="below grade entrance" width="50%"/>
+          <img src={belowgrade2} loading="lazy "alt="below grade entrance" width="50%"/>
+          <img src={belowgrade3} loading="lazy "alt="below grade entrance" width="50%"/>
+          <img src={belowgrade4} loading="lazy "alt="below grade entrance" width="50%"/>
+        </ImageContainer>
+        <Header>Framing</Header>
+        <Header>Plumbing</Header>
+        <Header>Kitchens</Header>
+        <Header>Bathrooms</Header>
+        <Header>Living Room</Header>
         
-        <h3>Aswell as Major House Renovations</h3>
-
+        <Header>Aswell as Major House Renovations</Header>
         <p>insert images here showing additonal services</p>
-        <h4>Give us a call for a free estimae</h4>
-        <h5>CARD OF CONTACT INFORMATION</h5>
+        <Header>
+            <Head>Give us a call for a free estimae</Head>
+            <Head>Contact</Head>
+            <Body>647-544-8925</Body>
+            <Head>Address</Head>
+            <Body>36 Carl Finlay Drive <br/>Brampton, Ontario L6R 1Y5 <br /> Canada</Body>
+        </Header>
       </Content>
       )
 }
 
-const Content = styled.div`
 
+const Content = styled.div`
   width:80%;
   max-width:1000px;
   margin: auto;
-  padding-top:110px;
+  padding-top:85px;
   min-height: 90vh;
   @media (max-width: 670px) {
-    padding-top:120px;
+    padding-top:85px;
+    width: 95%;
   }
+`;
+
+const Title = styled.h2`
+  background: #921010;
+  border-radius:5px;
+  color:white;
+  padding:5px;
+`;
+
+const Header = styled.h3`
+  background: #921010;
+  border-radius:5px;
+  color:white;
+  padding:5px;
+`;
+
+const Head = styled.p`
+  color: white;
+`;
+
+const Body = styled.p`
+  color: white;
+`;
+
+const ImageContainer = styled.div`
+  display:flex;
 `;

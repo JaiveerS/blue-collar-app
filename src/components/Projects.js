@@ -13,9 +13,14 @@ export default function Projects() {
 
 const Content = styled.div`
   display:flex;
-  width:100%;
-  max-width:1000px;
+  width:80%;
+  max-width:1250px;
   margin: auto;
-  padding-top: 100px;
+  padding-top:85px;
+
+  @media (max-width: 670px) {
+    padding-top:80px;
+    width:100%
+  }
   
 `;

@@ -88,12 +88,13 @@ const Content = styled.div`
   width:80%;
   max-width:1000px;
   margin: auto;
-  padding-top: 100px;
+  padding-top:85px;
   justify-content: center;
   column-gap: 0.1rem;
   @media (max-width: 670px) {
-    padding-top:120px;
+    padding-top:90px;
     flex-wrap: wrap;
+    width:90%;
   }
 
 `;
