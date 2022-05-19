@@ -1,4 +1,5 @@
 import React from "react";
+import Info from "./Info";
 import Logo from "../images/ontreno-logo.png";
 import {Link} from 'react-router-dom'
 import { Twirl as Hamburger } from 'hamburger-react'
@@ -10,44 +11,8 @@ export default function Navbar() {
     const closeMenu = () => setOpen(false);
 
     return(
-        // <nav className="navbar">
-        //     <div className="navbar--container">
-        //         <Link to="/" className="navbar--logo" onClick={closeMenu}>
-        //             <img className="navbar--logo" src={Logo} alt="OntReno" ></img>
-        //         </Link>
-        //         <div className="menu--icon">
-        //             <Hamburger toggled={isOpen} toggle={setOpen} color="black"/>
-        //         </div>
-        //         <ul className={isOpen ? 'nav-menu active' : 'nav-menu'}>
-        //             <li className="nav--item">
-        //                 <Link to='/' className="nav--links" onClick={closeMenu}>
-        //                     Home
-        //                 </Link>
-        //             </li>
-        //             <li className="nav--item">
-        //                 <Link to='/about-us' className="nav--links" onClick={closeMenu}>
-        //                     About Us
-        //                 </Link>
-        //             </li>
-        //             <li className="nav--item">
-        //                 <Link to='/projects' className="nav--links" onClick={closeMenu}>
-        //                     Projects
-        //                 </Link>
-        //             </li>
-        //             <li className="nav--item">
-        //                 <Link to='/contact-us' className="nav--links" onClick={closeMenu}>
-        //                     Contact Us
-        //                 </Link>
-        //             </li>
-        //             <li className="nav--item">
-        //                 <a className="nav--links--mobile" href="tel:+16476393289">
-        //                     Call
-        //                 </a>
-        //             </li>
-        //         </ul>
-        //     </div>
-        // </nav>
         <Nav isOpen={isOpen}>
+            {/* <Info/> */}
             <Container>
                 <Link to="/" onClick={closeMenu}>
                     <Img src={Logo} alt="OntReno" ></Img>
@@ -88,7 +53,7 @@ const Container = styled.div`
     justify-content: space-between;
     align-items: center;
     padding: 0.5rem 0;
-    max-width: 1000px;
+    max-width: 1250px;
     margin: auto;
     flex-wrap: wrap;
     
@@ -130,7 +95,7 @@ const LinkWrapper = styled.div`
 
     }
     
-    @media (max-width: 768px) {
+    @media (max-width: 670px) {
         flex-direction: column;
         text-align: center;
         padding: 20px;

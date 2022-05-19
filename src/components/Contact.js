@@ -94,7 +94,7 @@ const Content = styled.div`
   @media (max-width: 670px) {
     padding-top:90px;
     flex-wrap: wrap;
-    width:90%;
+    width:95%;
   }
 
 `;

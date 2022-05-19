@@ -2,7 +2,7 @@ import React from "react";
 import styled from 'styled-components';
 import { Slide } from 'react-slideshow-image';
 import 'react-slideshow-image/dist/styles.css'
-import image1 from '../images/gallery/23.jpg'
+import image1 from '../images/gallery/34.jpg'
 import image2 from '../images/gallery/2.jpg'
 import image3 from '../images/gallery/14.jpg'
 
@@ -43,7 +43,6 @@ export default function Home() {
 
 const Content = styled.div`
   width:100%;
-  max-width:1250px;
   margin: auto;
   padding-top:80px;
   min-height: 90vh;
@@ -58,7 +57,8 @@ const Content = styled.div`
   align-items: center;
   justify-content: center;
   background-size: cover;
-  height: 400px;
+  height: 500px;
+  background-position: center;
   border-radius:2px;
   @media (max-width: 670px) {
     height: 250px;
