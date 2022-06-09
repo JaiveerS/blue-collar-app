@@ -9,6 +9,14 @@ import {Link} from 'react-router-dom'
 import CardImport from './Card';
 import image50 from '../images/gallery/50.jpg'
 import image51 from '../images/gallery/1.jpg'
+import image52 from '../images/gallery/13.jpg'
+import image53 from '../images/gallery/22.jpg'
+import image54 from '../images/gallery/26.jpg'
+import image55 from '../images/gallery/7.jpg'
+
+
+
+
 
 
 
@@ -49,12 +57,12 @@ export default function Home() {
         <ContainerItems>
         {/* <Title>Services</Title> */}
             <CardContainer>
-            <Card Img={image51} Title="We Build Legal Basements" Content="Full basement renovations"/>
+            <Card Img={image53} Title="We Build Legal Basements" Content="Full basement renovations"/>
             <Card Img={image50} Title="Below Ground Entrances" Content="we build legal below ground entrances"/>
             <Card Img={image51} Title="Custom Kitchens" Content="build fully custom kitchens"/>
-            <Card Img={image51} Title="Custom Bathrooms" Content="build fully custom bathrooms"/>
-            <Card Img={image51} Title="Custom Living Areas" Content="build fully custom kitchens"/>
-            <Card Img={image51} Title="Any Major Renovation" Content="build fully custom kitchens"/>
+            <Card Img={image52} Title="Custom Bathrooms" Content="build fully custom bathrooms"/>
+            <Card Img={image54} Title="Custom Living Areas" Content="build fully custom kitchens"/>
+            <Card Img={image55} Title="Many More Major Renovation" Content="build fully custom kitchens"/>
           </CardContainer>
         </ContainerItems>
       </ServicesContainer>
@@ -152,7 +160,8 @@ const InfoDiv = styled.div`
   background-size: cover;
   border-radius: 10px;
   padding:50px
-  width:100%
+  width:80%
+  margin:auto;
   background-position: center center;
   @media (max-width: 670px) {
     width: 100%

@@ -19,6 +19,9 @@ const CardContainer = styled.div`
     max-width:300px;
     max-height:400px;
     margin-top: 20px;
+    @media (max-width: 670px) {
+        max-width:100%;
+      }
 `;
 
 const Title = styled.h1`
