@@ -22,10 +22,10 @@ export default function Services() {
         <Header>Book Inspections</Header>
         <Header>Digg Legal below grade entrances</Header>
         <ImageContainer>
-          <img src={belowgrade1} loading="lazy "alt="below grade entrance" width="50%"/>
-          <img src={belowgrade2} loading="lazy "alt="below grade entrance" width="50%"/>
-          <img src={belowgrade3} loading="lazy "alt="below grade entrance" width="50%"/>
-          <img src={belowgrade4} loading="lazy "alt="below grade entrance" width="50%"/>
+          <img src={belowgrade1} loading="lazy "alt="below grade entrance" width="25%"/>
+          <img src={belowgrade2} loading="lazy "alt="below grade entrance" width="25%"/>
+          <img src={belowgrade3} loading="lazy "alt="below grade entrance" width="25%"/>
+          <img src={belowgrade4} loading="lazy "alt="below grade entrance" width="25%"/>
         </ImageContainer>
         <Header>Framing</Header>
         <Header>Plumbing</Header>
