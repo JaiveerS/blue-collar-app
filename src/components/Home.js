@@ -14,6 +14,9 @@ import image53 from '../images/gallery/22.jpg'
 import image54 from '../images/gallery/26.jpg'
 import image55 from '../images/gallery/7.jpg'
 
+import Contact from './Contact';
+
+
 
 
 
@@ -66,12 +69,13 @@ export default function Home() {
           </CardContainer>
         </ContainerItems>
       </ServicesContainer>
-      <InfoDiv>
+      {/* <InfoDiv>
             <Head>Contact</Head>
             <Body>647-544-8925</Body>
             <Head>Address</Head>
             <Body>36 Carl Finlay Drive <br/>Brampton, Ontario L6R 1Y5 <br /> Canada</Body>
-        </InfoDiv>
+        </InfoDiv> */}
+        <Contact/>
       </Content>
       )
 }
@@ -152,6 +156,9 @@ const ServicesContainer = styled.div`
 const ContainerItems = styled.div`
     width:80%;
     margin:auto;
+    @media (max-width: 670px) {
+      width:100%;
+    }
 `;
 
 const InfoDiv = styled.div`
