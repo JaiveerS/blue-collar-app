@@ -46,6 +46,9 @@ const Nav = styled.div`
     right: 0;
     z-index: 3;
     background-color: ${({ isOpen }) => (isOpen ? "#860F0F" : "#921010")};
+    position: ${({ isOpen }) => (isOpen ? 'fixed' : 'absolute')};
+    overflow: ${({ isOpen }) => (isOpen ? 'hidden' : 'visible')};
+    height: ${({ isOpen }) => (isOpen ? '100%' : 'auto')};
     
 `;
 const Container = styled.div`
