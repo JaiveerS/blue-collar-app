@@ -157,7 +157,7 @@ const ContainerItems = styled.div`
     width:80%;
     margin:auto;
     @media (max-width: 670px) {
-      width:100%;
+      width:90%;
     }
 `;
 
