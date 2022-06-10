@@ -23,7 +23,11 @@ const Container = styled.div`
     display: grid;
     grid-gap: 2.5px;
     grid-template-columns: repeat(auto-fit, minmax(425px, 1fr));
+    @media (max-width: 670px) {
+      max-width:100%;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 
+    }
 
 `;
 
@@ -31,4 +35,7 @@ const Picture = styled.img`
   width: 100%;
   height: 100%;
   object-fit: cover;
+  @media (max-width: 670px) {
+    max-width:100%;
+  }
 `;

@@ -59,8 +59,8 @@ export default function Home() {
             <CardContainer>
             <Card Img={image53} Title="We Build Legal Basements" Content="Full basement renovations"/>
             <Card Img={image50} Title="Below Ground Entrances" Content="we build legal below ground entrances"/>
-            <Card Img={image51} Title="Custom Kitchens" Content="build fully custom kitchens"/>
             <Card Img={image52} Title="Custom Bathrooms" Content="build fully custom bathrooms"/>
+            <Card Img={image51} Title="Custom Kitchens" Content="build fully custom kitchens"/>
             <Card Img={image54} Title="Custom Living Areas" Content="build fully custom kitchens"/>
             <Card Img={image55} Title="Many More Major Renovation" Content="build fully custom kitchens"/>
           </CardContainer>
