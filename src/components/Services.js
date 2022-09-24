@@ -6,13 +6,16 @@ import belowgrade1 from '../images/gallery/50.jpg'
 import belowgrade2 from '../images/gallery/54.jpg'
 import belowgrade3 from '../images/gallery/46.jpg'
 import belowgrade4 from '../images/gallery/28.jpg'
+import Contact from './Contact';
+import Card from './ServiceCard';
+
 
 
 export default function Services() {
     return (
       <Content>
         <Title>Our Services</Title>
-        <Title>We Specialize In Legal Basements</Title>
+        {/* <Title>We Specialize In Legal Basements</Title>
         <Header>We Do It All </Header>
         <Header>obtain building permits & prepare architectural drawings</Header>
         <ImageContainer>
@@ -35,13 +38,10 @@ export default function Services() {
         
         <Header>Aswell as Major House Renovations</Header>
         <p>insert images here showing additonal services</p>
-        <Header>
-            <Head>Give us a call for a free estimae</Head>
-            <Head>Contact</Head>
-            <Body>647-544-8925</Body>
-            <Head>Address</Head>
-            <Body>36 Carl Finlay Drive <br/>Brampton, Ontario L6R 1Y5 <br /> Canada</Body>
-        </Header>
+        <Container>
+          <Contact/>
+        </Container> */}
+      <Card/>
       </Content>
       )
 }
@@ -53,6 +53,7 @@ const Content = styled.div`
   margin: auto;
   padding-top:85px;
   min-height: 90vh;
+  background:#f8f8ff;
   @media (max-width: 670px) {
     padding-top:85px;
     width: 95%;
@@ -83,4 +84,8 @@ const Body = styled.p`
 
 const ImageContainer = styled.div`
   display:flex;
+`;
+
+const Container = styled.div`
+  padding-top:none;
 `;

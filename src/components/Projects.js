@@ -16,7 +16,7 @@ const Content = styled.div`
   width:80%;
   max-width:1250px;
   margin: auto;
-  padding-top:85px;
+  padding-top:70px;
 
   @media (max-width: 670px) {
     padding-top:80px;

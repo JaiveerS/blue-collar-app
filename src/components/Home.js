@@ -82,7 +82,7 @@ export default function Home() {
 
 const Content = styled.div`
   width:100%;
-  max-width:1500px;
+  max-width:1400px;
   margin: auto;
   padding-top:80px;
   min-height: 90vh;
@@ -154,7 +154,8 @@ const ServicesContainer = styled.div`
 `;
 
 const ContainerItems = styled.div`
-    width:80%;
+    width:90%;
+    max-width:1400px;
     margin:auto;
     @media (max-width: 670px) {
       width:90%;
