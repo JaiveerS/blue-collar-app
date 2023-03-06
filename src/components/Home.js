@@ -30,11 +30,11 @@ const slideImages = [
     caption: 'Get A FREE ESTIMATE NOW!',
     url: '/contact'
   },
-  {
-    image: {src:image2},
-    caption: 'Check Out Our Services!',
-    url: '/services'
-  },
+  // {
+  //   image: {src:image2},
+  //   caption: 'Check Out Our Services!',
+  //   url: '/services'
+  // },
   {
     image: {src:image3},
     caption: 'Check Out Some Of Our Projects!',

@@ -25,8 +25,8 @@ export default function Navbar() {
                     <LinkWrapper>
                             <MenuLink to="/" onClick={closeMenu}>Home</MenuLink>
                             <Divider/>
-                            <MenuLink to="/services" onClick={closeMenu}>Services</MenuLink>
-                            <Divider/>
+                            {/* <MenuLink to="/services" onClick={closeMenu}>Services</MenuLink>
+                            <Divider/> */}
                             <MenuLink to="/projects" onClick={closeMenu}>Projects</MenuLink>
                             <Divider/>
                             <MenuLink to="/contact" onClick={closeMenu}>Contact Us</MenuLink>
