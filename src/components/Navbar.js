@@ -1,5 +1,4 @@
-import React from "react";
-import Info from "./Info";
+import React, { useState } from "react";
 import Logo from "../images/ontreno-logo.png";
 import {Link} from 'react-router-dom'
 import { Twirl as Hamburger } from 'hamburger-react'
@@ -7,7 +6,7 @@ import styled from 'styled-components';
 
 
 export default function Navbar() {
-    const [isOpen, setOpen] = React.useState(false)
+    const [isOpen, setOpen] = useState(false)
     const closeMenu = () => setOpen(false);
 
     return(
@@ -23,14 +22,9 @@ export default function Navbar() {
                 </HamburgerMenu>
                 <Menu isOpen={isOpen}>
                     <LinkWrapper>
-                            <MenuLink to="/" onClick={closeMenu}>Home</MenuLink>
-                            <Divider/>
-                            {/* <MenuLink to="/services" onClick={closeMenu}>Services</MenuLink>
-                            <Divider/> */}
-                            <MenuLink to="/projects" onClick={closeMenu}>Projects</MenuLink>
-                            <Divider/>
-                            <MenuLink to="/contact" onClick={closeMenu}>Contact Us</MenuLink>
-                            <Divider/>
+                        <MenuLink to="/" onClick={closeMenu}>Home</MenuLink>
+                        <MenuLink to="/projects" onClick={closeMenu}>Projects</MenuLink>
+                        <MenuLink to="/contact" onClick={closeMenu}>Contact</MenuLink>
                         <Button href="tel:+16475448925">Call Us</Button>
                     </LinkWrapper>
                 </Menu>
@@ -74,6 +68,7 @@ const Menu = styled.div`
     position: relative;
     @media (max-width: 670px) {
         padding-top: 30px;
+        margin-top: 10px;
         border-radius: 1rem;
         overflow: hidden;
         flex-direction: column;
@@ -86,16 +81,14 @@ const LinkWrapper = styled.div`
     a {
         text-decoration: none;
         color: white;
-        font-size: 0.9rem;
+        font-size: 1.2rem;
         padding: 0.7rem 1rem;
         transition: all 0.1s ease-in;
         border-radius: 0.5rem;
         font-weight: 500;
         
         &:hover {
-        color: white;
-        background: #800707;
-
+        font-weight: 750;
     }
     
     @media (max-width: 670px) {
@@ -109,10 +102,22 @@ const MenuLink = styled(Link)`
     font-family: Inter;
     font-style: normal;
     font-weight: normal;
+    @media (min-width: 670px){
+        &:hover {
+            color:white;
+        }
+    }
+
     @media (max-width: 670px) {
         display: flex;
         flex-direction:column;
         overflow:hidden;
+        
+            &:hover {
+            font-weight: 750;
+            color: #860F0F;
+            background: white;
+        }
     }
 `;
 const Button = styled.a`
@@ -123,13 +128,13 @@ const Button = styled.a`
     text-align: center;
     
     @media (max-width: 670px) {
-        padding: 0.5;
         display: flex;
-        flex-direction: column;
         background: green;
-        width: 200%;
-        margin-left: -60px;
-        margin-top: 40px;
+        margin-top: 25px;
+        min-width: 250px;
+        &:hover{
+            color: white;
+        }
     }
 `;
 
@@ -143,11 +148,3 @@ const HamburgerMenu = styled.div`
     }
 `;
 
-const Divider = styled.hr`
-    display:none;
-    @media (max-width: 670px) {
-        display: block;
-        border-top: 4px solid #000000;
-        border-radius: 5px;
-    }
-`;

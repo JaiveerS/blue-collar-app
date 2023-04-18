@@ -171,7 +171,7 @@ const FormText = styled.textarea`
 const Button = styled.button`
   display: block;
   width: 100%;
-  background-color: #921010;
+  background: #800707;
   border: none;
   border-radius: 3px;
   padding: 1ch;
