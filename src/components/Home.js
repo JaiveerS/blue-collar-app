@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import { Slide } from 'react-slideshow-image';
 import 'react-slideshow-image/dist/styles.css'
 import image1 from '../images/gallery/34.jpg'
-import image2 from '../images/gallery/2.jpg'
+// import image2 from '../images/gallery/2.jpg'
 import image3 from '../images/gallery/14.jpg'
 import {Link} from 'react-router-dom'
 import CardImport from './Card';
@@ -15,13 +15,6 @@ import image54 from '../images/gallery/26.jpg'
 import image55 from '../images/gallery/7.jpg'
 
 import Contact from './Contact';
-
-
-
-
-
-
-
 
 
 const slideImages = [
@@ -119,9 +112,9 @@ const Content = styled.div`
 
 `;
 
-const Title = styled.h1`
-  padding-top: 10px;
-`;
+// const Title = styled.h1`
+//   padding-top: 10px;
+// `;
 
 const SliderLink = styled(Link)`
   color:white;
@@ -162,25 +155,25 @@ const ContainerItems = styled.div`
     }
 `;
 
-const InfoDiv = styled.div`
-  background: linear-gradient(0deg, rgba(0 0 0 / 70%), rgba(0 0 0 / 70%)), url(${image3});
-  background-repeat:no-repeat;
-  background-size: cover;
-  border-radius: 10px;
-  padding:50px
-  width:80%
-  margin:auto;
-  background-position: center center;
-  @media (max-width: 670px) {
-    width: 100%
-    margin-top: 5px;
-  }
-`;
+// const InfoDiv = styled.div`
+//   background: linear-gradient(0deg, rgba(0 0 0 / 70%), rgba(0 0 0 / 70%)), url(${image3});
+//   background-repeat:no-repeat;
+//   background-size: cover;
+//   border-radius: 10px;
+//   padding:50px
+//   width:80%
+//   margin:auto;
+//   background-position: center center;
+//   @media (max-width: 670px) {
+//     width: 100%
+//     margin-top: 5px;
+//   }
+// `;
 
-const Head = styled.h2`
-  color: white;
-`;
+// const Head = styled.h2`
+//   color: white;
+// `;
 
-const Body = styled.p`
-  color: white;
-`;
+// const Body = styled.p`
+//   color: white;
+// `;

@@ -88,6 +88,7 @@ const Content = styled.div`
   width:80%;
   max-width:1000px;
   margin: auto;
+  margin-top: 10px;
   padding-top:85px;
   justify-content: center;
   column-gap: 0.1rem;
