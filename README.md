@@ -20,6 +20,7 @@ The Blue Collar App offers the following features:
 - HTML
 - CSS
 - JavaScript
+- React
 
 ## Usage
 
