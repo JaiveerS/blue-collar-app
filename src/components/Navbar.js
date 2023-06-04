@@ -92,7 +92,7 @@ const LinkWrapper = styled.div`
         font-weight: 500;
         
         &:hover {
-        font-weight: 750;
+        background: #860F0F;
     }
     
     @media (max-width: 670px) {
@@ -118,9 +118,9 @@ const MenuLink = styled(Link)`
         overflow:hidden;
         
             &:hover {
-            font-weight: 750;
-            color: #860F0F;
-            background: white;
+            // font-weight: 750;
+            color: black;
+            // background: white;
         }
     }
 `;
@@ -137,7 +137,7 @@ const Button = styled.a`
         margin-top: 25px;
         min-width: 250px;
         &:hover{
-            color: white;
+            color: black;
         }
     }
 `;
