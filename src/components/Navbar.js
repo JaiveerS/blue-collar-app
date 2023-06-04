@@ -3,11 +3,15 @@ import Logo from "../images/ontreno-logo.png";
 import {Link} from 'react-router-dom'
 import { Twirl as Hamburger } from 'hamburger-react'
 import styled from 'styled-components';
+import { disableBodyScroll, enableBodyScroll } from "body-scroll-lock";
+
 
 
 export default function Navbar() {
     const [isOpen, setOpen] = useState(false)
     const closeMenu = () => setOpen(false);
+
+    isOpen ? disableBodyScroll(document) : enableBodyScroll(document);
 
     return(
         <Nav isOpen={isOpen}>
