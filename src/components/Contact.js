@@ -5,6 +5,7 @@ import { useRef } from 'react';
 import image from '../images/gallery/1.jpg'
 import imageRight from '../images/gallery/14.jpg'
 import Iframe from 'react-iframe'
+import Swal from 'sweetalert2';
 
 
 
@@ -19,9 +20,20 @@ export default function Contact() {
     emailjs.sendForm("service_rzc36h9", "template_70x8lqx", form.current, "V6jDmbnd0SyYm3ics")
       .then((result) => {
         form.current.reset();
-        alert("Message Sent");
+        // alert("Message Sent");
+        Swal.fire({
+          position : 'top',
+          title: 'Message Sent!',
+          icon: 'success'
+        })
       }, (error) => {
-        alert("Message failed to send.", error);
+        // alert("Message failed to send.", error);
+        Swal.fire({
+          position:'top',
+          icon: 'error',
+          title: 'Oops... Message failed to send.',
+          text: error,
+        })
       });
 
   };
